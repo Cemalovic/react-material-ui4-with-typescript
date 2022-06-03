@@ -4,7 +4,11 @@ import useStyles from '../styles'
 const ButtonStyled = () => {
   const classes = useStyles()
 
-  return <Button className={classes.root}>Button Styled</Button>
+  return (
+    <Button className={classes.root} fullWidth>
+      Button Styled
+    </Button>
+  )
 }
 
 export default ButtonStyled

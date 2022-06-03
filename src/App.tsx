@@ -22,19 +22,69 @@ import './App.css'
 
 function App() {
   const theme = createTheme({
-    //   palette: {
-    //     primary: {
-    //       main: green[400]
-    //     },
-    //     secondary: {
-    //       main: orange[400]
-    //     }
-    //   },
+    palette: {
+      primary: {
+        main: green[400]
+      },
+      secondary: {
+        main: orange[400]
+      }
+    },
 
     typography: {
       h2: {
         fontSize: 36,
         marginBottom: 15
+      }
+    },
+
+    shape: {
+      borderRadius: 0
+    },
+
+    overrides: {
+      MuiButton: {
+        root: {
+          textTransform: 'none',
+          padding: 20
+        },
+        fullWidth: {
+          maxWidth: '300px'
+        }
+      },
+      MuiFilledInput: {
+        root: {
+          backgroundColor: 'green'
+        }
+      },
+      MuiInputLabel: {
+        root: {
+          backgroundColor: 'yellow'
+        }
+      }
+      // MuiTextField: {
+      // root: {
+      //   backgroundColor: 'red'
+      // }
+      // }
+    },
+
+    props: {
+      MuiButton: {
+        disableRipple: true
+      },
+      MuiCheckbox: {
+        disableRipple: true
+      },
+      MuiTextField: {
+        // variant: 'outlined',
+        variant: 'filled',
+        InputLabelProps: {
+          shrink: true
+        }
+      },
+      MuiPaper: {
+        elevation: 12
       }
     }
   })
@@ -72,7 +122,6 @@ function App() {
             </Grid>
 
             <TextField
-              variant='filled'
               color='secondary'
               // type='date'
               // type='time'
