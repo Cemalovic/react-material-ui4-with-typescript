@@ -4,6 +4,9 @@ import TextField from '@material-ui/core/TextField'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper'
+import InputAdornment from '@material-ui/core/InputAdornment'
+
+import SearchIcon from '@material-ui/icons/Search'
 
 import { ThemeProvider, createTheme } from '@material-ui/core/styles'
 
@@ -129,6 +132,13 @@ function App() {
               // label='Time'
               label='Email'
               placeholder='test@testing.com'
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position='end'>
+                    <SearchIcon />
+                  </InputAdornment>
+                )
+              }}
             />
 
             <CheckboxExample />
