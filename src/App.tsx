@@ -101,10 +101,8 @@ function App() {
   const methods = useForm<IFormInputs>()
 
   const {
-    register,
     handleSubmit,
     watch,
-    control,
     formState: { errors }
   } = methods
 
