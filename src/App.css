@@ -16,7 +16,8 @@
 }
 
 input {
-  color: white !important;
+  /* color: white !important; */
+  color: inherit;
 }
 
 @keyframes App-logo-spin {
